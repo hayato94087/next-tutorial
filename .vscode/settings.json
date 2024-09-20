@@ -1,0 +1,131 @@
+{
+  "editor.codeActionsOnSave": {
+    // ファイル保存時にESLintの自動修正するかの設定
+    //
+    // ESLintの自動修正を実行したい場合は、codeActionsOnSaveを設定する。
+    // https://qiita.com/keitaMax/items/f8af4bb1e7eccfd3bbc9
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // フォーマッターの設定
+  //
+  // デフォルトではPrettierをフォーマッターとして指定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // フォーマッターの設定
+  //
+  // PrismaのスキーマファイルはフォーマッターとしてPrism.prismaを指定
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  // ファイル保存時に自動フォーマットするかの設定
+  //
+  // formatOnSaveがtrueだと、保存時にPrettierは実行されるが、ESLintは実行されない。
+  // ESLintの自動修正を実行したい場合は、codeActionsOnSaveを設定する。
+  //
+  // formatOnSaveがfalseだと、保存時にPrettier・ESLintは実行されない
+  "editor.formatOnSave": false,
+
+  // エディターの行の最大文字数を設定
+  "editor.rulers": [100],
+
+  // エディターのタブサイズを設定
+  "editor.tabSize": 2,
+
+  // サジェストの設定
+  //
+  // Tailwind CSS IntelliSenseの保管が出ないとき用の対応としてstringsをtrueに設定
+  // https://x.com/shimabu_it/status/1370925220190593025
+  //
+  // commentsをfalseに設定することでコメント内でのサジェストを無効化
+  // GitHubのCopilotで自動補完しているためコメント内のサジェストがじゃまになるためfalseに設定
+  // https://zenn.dev/takamichie/articles/9902d6f6768532
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true
+  },
+
+  // エディタの表示領域右端で折り返しをするかどうかの設定
+  // https://atmarkit.itmedia.co.jp/ait/articles/1807/27/news035.html
+  "editor.wordWrap": "on",
+
+  // 制御文字を表示するかどうかの設定
+  //
+  // 制御文字が表示されずに不具合が発生する可能性があるのでtrueに設定
+  // https://astropengu.in/posts/2/
+  // https://code.visualstudio.com/updates/v1_62#_unicode-directional-formatting-characters
+  "editor.renderControlCharacters": true,
+
+  // ESLint を実行するノード ランタイムのパスを設定
+  //
+  // runtimeにnodeを設定することで、システムの Node.js ランタイムを使用
+  // https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+  // https://github.com/microsoft/vscode-eslint/issues/1233#issuecomment-815521280
+  "eslint.runtime": "node",
+
+  // Prettierでコードフォーマットさせないファイルパスが記載されているファイルを指定
+  //
+  // .gitignoreと設定することで、.gitignoreに記載されているファイルはPrettierでフォーマットされなくなる
+  // 無駄なファイルをフォーマットさせないために.gitignoreを設定する。
+  "prettier.ignorePath": ".gitignore",
+
+  // TailwindCSSの補完対象を正規表現で指定
+  //
+  // 正規表現を追加することで、TailwindCSSの補完対象となる。
+  // https://zenn.dev/shon0/articles/2aa72060fb824d
+  // https://github.com/t3-oss/create-t3-turbo/blob/main/.vscode/settings.json
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  // TailwindCSSの設定ファイルを指定
+  //
+  // VSCodeで「tailwind intellisense」の補完が効かない場合があるため念の為に設定
+  // https://qiita.com/tanimoto-hikari/items/0b188634b411eafe1c37
+  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
+
+  // WorkspaceのTypeScriptを使用するかどうかの設定
+  //
+  // WorkspaceのTypeScriptを使用するようにユーザーへ確認するよう通知
+  // https://zenn.dev/sev3e3e/articles/6b449e70c39d65#%E3%81%AA%E3%82%93%E3%81%A7%E8%B5%B7%E3%81%93%E3%82%8B%E3%81%AE%EF%BC%9F
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // 使用するTypeScriptのバージョンを指定
+  //
+  // TypeScriptのバージョンとして、プロジェクトのnode_modulesディレクトリにインストールされたものを使用
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Tailwindをimportする際に出てくるエラー「Unknown at rule @tailwind」を解消する設定
+  // 参考：https://flaviocopes.com/fix-unknown-at-rule-tailwind/
+  // 参考：https://qiita.com/P-man_Brown/items/bf05437afecde268ec15
+  "css.lint.unknownAtRules": "ignore",
+
+  // データ送信を行わないためにfalseを設定
+  // https://docs.redhat.com/ja/documentation/openshift_container_platform/4.1/html/telemetry/disabling-telemetry_telemetry
+  "redhat.telemetry.enabled": false,
+
+  // ファイルネスティングの設定
+  //
+  // 自信の好みでグルーピング化することで、ファイルの整理がしやすくなる
+  // https://qiita.com/take_me/items/8cb930bf5d223bf86386
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js, ${capture}.typegen.ts",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts, ${capture}.typegen.ts",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .eslintrc.json, next.config.mjs, postcss.config.mjs, tailwind.config.ts, tsconfig.json, next-env.d.ts, .gitignore, .eslintrc.cjs",
+    "*.mts": "${capture}.typegen.ts",
+    "*.cts": "${capture}.typegen.ts"
+  },
+
+  // 検索結果から特定ファイルを除外
+  //
+  // VScodeでは開いたディレクトリ内でgrep検索が可能ですが、予め特定のファイルを検索対象から除外することができます。
+  // https://dlrecord.hatenablog.com/entry/2020/11/22/144540
+  "search.exclude": {
+    "**/node_modules": true
+  },
+}
