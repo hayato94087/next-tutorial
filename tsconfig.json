@@ -39,7 +39,16 @@
   /* コンパイル対象範囲 */
   /*******************/
   /* コンパイル対象に含めるファイルを指定 */
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js", ".next/types/**/*.ts", ".eslintrc.cjs", "next.config.mjs"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.js",
+    ".next/types/**/*.ts",
+    ".eslintrc.cjs",
+    "next.config.mjs"
+  ],
   /* include されたファイルから除外するファイルを指定 */
   "exclude": ["node_modules", "dist"]
 }

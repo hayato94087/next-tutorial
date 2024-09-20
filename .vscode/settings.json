@@ -127,5 +127,5 @@
   // https://dlrecord.hatenablog.com/entry/2020/11/22/144540
   "search.exclude": {
     "**/node_modules": true
-  },
+  }
 }
