@@ -1,0 +1,24 @@
+{
+  "recommendations": [
+    // Linging
+    "dbaeumer.vscode-eslint",
+
+    // Formatting
+    "esbenp.prettier-vscode",
+
+    // Error messages
+    "yoavbls.pretty-ts-errors",
+
+    // Tailwind CSS
+    "bradlc.vscode-tailwindcss",
+
+    // Inline error messages
+    "usernamehw.errorlens",
+
+    // display import cost of packages
+    "wix.vscode-import-cost",
+
+    // use code formatter for Prisma
+    "Prisma.prisma"
+  ]
+}
