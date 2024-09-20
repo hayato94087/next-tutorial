@@ -1,26 +1,45 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
+    /* Base Options: */
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "allowJs": true,
     "resolveJsonModule": true,
+    "moduleDetection": "force",
     "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+
+    /* Bundled projects */
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "noEmit": true,
+    "outDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "jsx": "preserve",
+    "plugins": [{ "name": "next" }],
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+
+    /*******************/
+    /* パスのエイリアス   */
+    /*******************/
+    /* `.`を指定することで `tsconfig.json` ファイルを含んでいるディレクトリをルートディレクトリとして相対パスでファイルにアクセスできる */
+    "baseUrl": ".",
+    /* `paths` で `@/*` に `./src/*` を設定することで `@/` のエイリアスを活用しファイルにアクセスできる */
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+
+  /*******************/
+  /* コンパイル対象範囲 */
+  /*******************/
+  /* コンパイル対象に含めるファイルを指定 */
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js", ".next/types/**/*.ts", ".eslintrc.cjs", "next.config.mjs"],
+  /* include されたファイルから除外するファイルを指定 */
+  "exclude": ["node_modules", "dist"]
 }
