@@ -15,9 +15,11 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@t3-oss/env-nextjs": "^0.11.1",
     "next": "14.2.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
