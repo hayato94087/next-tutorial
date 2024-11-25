@@ -35,22 +35,26 @@ const config = {
         case: "kebabCase",
       },
     ],
-    "func-style": ["error", "declaration", { "allowArrowFunctions": false }],
-    "prefer-arrow-callback": ["error", { "allowNamedFunctions": false }],
+    "func-style": ["error", "declaration", { allowArrowFunctions: false }],
+    "prefer-arrow-callback": ["error", { allowNamedFunctions: false }],
     "import/no-default-export": "error",
   },
   overrides: [
     {
-      files: ["**/page.tsx", "**/layout.tsx", "next.config.ts", "postcss.config.mjs", "tailwind.config.ts"],
+      files: [
+        "**/page.tsx",
+        "**/layout.tsx",
+        "next.config.ts",
+        "postcss.config.mjs",
+        "tailwind.config.ts",
+      ],
       rules: {
         "import/no-default-export": "off",
         "import/prefer-default-export": "error",
       },
     },
   ],
-  ignorePatterns: [
-    "src/components/ui/*",
-  ],
+  ignorePatterns: ["src/components/ui/*"],
 };
 
 module.exports = config;
