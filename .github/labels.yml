@@ -1,0 +1,51 @@
+- name: "⚙️ CI関連"
+  color: "4A5568"
+  description: "CI/GitHub Actionsに関する課題"
+
+- name: "🔍 再現不可"
+  color: "FDB950"
+  description: "報告されたバグが再現できない課題"
+
+- name: "🔁 重複"
+  color: "808080"
+  description: "既存のIssueまたはPRと重複している"
+
+- name: "📚 ドキュメント"
+  color: "0366D6"
+  description: "ドキュメントの改善や追加"
+
+- name: "✨ 機能強化"
+  color: "5319E7"
+  description: "新機能のリクエストや機能強化"
+
+- name: "🚨 優先度高"
+  color: "D93F0B"
+  description: "緊急の対応が必要な課題"
+
+- name: "💭 その他"
+  color: "76E575"
+  description: "カテゴリ以外の課題"
+
+- name: "🐞 バグ確認済"
+  color: "d73a4a"
+  description: "確認済みの不具合や問題"
+
+- name: "🐞 上流バグ"
+  color: "d73a4a"
+  description: "上流プロジェクトのバグによってブロックされている課題"
+
+- name: "❓ 質問"
+  color: "d876e3"
+  description: "追加情報や確認が必要な課題"
+
+- name: "💬 議論"
+  color: "fbca04"
+  description: "決定前に更なる議論が必要な課題"
+
+- name: "🛑 対応なし"
+  color: "ffffff"
+  description: "対応しないと判断された課題"
+
+- name: "🐞❔ 未確認バグ"
+  color: "d73a4a"
+  description: "報告されたが未確認のバグ"
