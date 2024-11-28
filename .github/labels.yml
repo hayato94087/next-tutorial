@@ -58,6 +58,11 @@
   color: "5319E7"
   description: "ESLint、Prettier、TypeScript、Husky等の開発ツール全般に関する課題"
 
+
+- name: "duplicate"
+  color: "808080"
+  description: "既存のIssueまたはPRと重複している"
+
 - name: "documentation"
   color: "0366D6"
   description: "ドキュメントの改善や追加"
