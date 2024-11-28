@@ -57,3 +57,8 @@
 - name: "🛠️ Dev Tools"
   color: "5319E7"
   description: "ESLint、Prettier、TypeScript、Husky等の開発ツール全般に関する課題"
+
+
+- name: "documentation"
+  color: "0366D6"
+  description: "ドキュメントの改善や追加"
