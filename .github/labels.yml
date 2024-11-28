@@ -21,7 +21,3 @@
 - name: "🔥 優先度高"
   color: "b60205"
   description: "緊急の対応が必要な課題"
-
-- name: "🤝 誰でも歓迎"
-  color: "0052cc"
-  description: "誰でもIssueに取り組んでPRを提出可能"

@@ -14,10 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          sparse-checkout: .github/labels.yml
 
       - name: Label Syncer
-        uses: EndBug/label-sync@v2
+        uses: micnncim/action-label-syncer@v1.3.0
         with:
-          config-file: .github/labels.yml
+          manifest: .github/labels.yml
