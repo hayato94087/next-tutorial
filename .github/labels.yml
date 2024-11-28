@@ -53,3 +53,7 @@
 - name: "💻 エディター関連"
   color: "007ACC"
   description: "VSCode/Cursorなどのエディターに関連する課題"
+
+- name: "🛠️ Dev Tools"
+  color: "5319E7"
+  description: "ESLint、Prettier、TypeScript、Husky等の開発ツール全般に関する課題"
