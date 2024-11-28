@@ -1,4 +1,4 @@
-- name: "area: ci"
+- name: "⚙️ CI関連"
   color: "4A5568"
   description: "CI/GitHub Actionsに関する課題"
 
@@ -58,6 +58,9 @@
   color: "5319E7"
   description: "ESLint、Prettier、TypeScript、Husky等の開発ツール全般に関する課題"
 
+- name: "area: ci"
+  color: "4A5568"
+  description: "CI/GitHub Actionsに関する課題"
 
 - name: "duplicate"
   color: "808080"
