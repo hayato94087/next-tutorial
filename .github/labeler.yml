@@ -5,3 +5,6 @@
 "📚 ドキュメント":
   - any: ["**/*.md"]
   
+"documentation":
+  - any: ["**/*.md"]
+  
