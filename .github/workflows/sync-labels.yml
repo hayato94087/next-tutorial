@@ -1,0 +1,19 @@
+name: Sync labels
+
+on:
+  push:
+    paths:
+      - .github/labels.yml
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Label Syncer
+        uses: micnncim/action-label-syncer@v1.3.0
+        with:
+          manifest: .github/labels.yml
