@@ -1,9 +1,6 @@
-"⚙️ CI関連":
+"area: ci":
   - any: [".github/**/*"]
   - any: [".husky/**/*"]
-
-"📚 ドキュメント":
-  - any: ["**/*.md"]
   
 "documentation":
   - any: ["**/*.md"]

@@ -1,4 +1,4 @@
-- name: "⚙️ CI関連"
+- name: "area: ci"
   color: "4A5568"
   description: "CI/GitHub Actionsに関する課題"
 
