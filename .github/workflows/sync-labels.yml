@@ -8,6 +8,10 @@ on:
       - .github/labels.yml
   workflow_dispatch:
 
+# 権限設定を追加
+permissions:
+  issues: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
