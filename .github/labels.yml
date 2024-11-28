@@ -17,7 +17,3 @@
 - name: "✨ 機能強化"
   color: "a2eeef"
   description: "新機能のリクエストや機能強化"
-
-- name: "🔥 優先度高"
-  color: "b60205"
-  description: "緊急の対応が必要な課題"
