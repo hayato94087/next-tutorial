@@ -1,5 +1,6 @@
 documentation:
-  - any: ["**/*.md"]
+  - changed-files:
+    - any-glob-to-any-file: '**/*.md'
 
 
 release:
