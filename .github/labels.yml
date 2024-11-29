@@ -5,3 +5,7 @@
 - name: "enhancement"
   color: "5319E7"
   description: "新機能のリクエストや機能強化"
+
+- name: "release"
+  color: "0366D6"
+  description: "リリースに関する作業"

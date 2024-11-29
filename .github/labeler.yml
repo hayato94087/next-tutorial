@@ -1,2 +1,6 @@
 documentation:
   - any: ["**/*.md"]
+
+
+release:
+ - base-branch: 'main'
