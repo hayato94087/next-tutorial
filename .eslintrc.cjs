@@ -3,6 +3,7 @@ const config = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: true,
+    extraFileExtensions: [],
   },
   extends: [
     "next/core-web-vitals",
@@ -54,7 +55,7 @@ const config = {
       },
     },
   ],
-  ignorePatterns: ["src/components/ui/*"],
+  ignorePatterns: ["src/components/ui/*", "*.md"],
 };
 
 module.exports = config;
