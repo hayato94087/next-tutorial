@@ -1,7 +1,2 @@
-"area: ci":
-  - any: [".github/**/*"]
-  - any: [".husky/**/*"]
-  
 "documentation":
   - any: ["**/*.md"]
-  
