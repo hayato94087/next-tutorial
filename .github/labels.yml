@@ -62,6 +62,10 @@
   color: "4A5568"
   description: "CI/GitHub Actionsに関する課題"
 
+- name: "cant reproduce"
+  color: "FDB950"
+  description: "報告されたバグが再現できない課題"
+
 - name: "duplicate"
   color: "808080"
   description: "既存のIssueまたはPRと重複している"
