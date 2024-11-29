@@ -73,3 +73,7 @@
 - name: "documentation"
   color: "0366D6"
   description: "ドキュメントの改善や追加"
+
+- name: "enhancement"
+  color: "5319E7"
+  description: "新機能のリクエストや機能強化"
