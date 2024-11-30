@@ -1,0 +1,8 @@
+"⚙️ CI関連":
+  - changed-files:
+      - any-glob-to-all-files:
+          [".github/**/*", ".lintstagedrc", ".prettierrc.mjs", ".eslintrc.cjs"]
+
+"📚 ドキュメント":
+  - changed-files:
+      - any-glob-to-any-file: ["**/*.md"]
