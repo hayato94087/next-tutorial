@@ -1,0 +1,37 @@
+name: "🐞 バグ報告"
+description: 改善に役立つバグ報告を作成する
+title: "バグ: "
+labels: ["🐞❔ 未確認バグ"]
+body:
+  - type: textarea
+    attributes:
+      label: 環境情報を提供してください
+      description: |
+        プロジェクトのルートディレクトリで以下のコマンドを実行し、結果を貼り付けてください：
+        ```bash
+        npx envinfo --system --binaries
+        ```
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: バグの説明
+      description: バグの内容を明確かつ簡潔に説明し、また、バグに遭遇したときに期待していた動作についても説明してください。
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 再現用リポジトリ
+      description: 該当する場合、再現用リポジトリへのリンクを提供してください。これが提供されず、問題を再現できない場合、Issueがクローズされる可能性があります。ドキュメントの問題の場合は、該当するページへのリンクを記載してください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 再現手順
+      description: バグの再現方法を説明してください。手順、コードスニペット、再現用リポジトリなどを含めてください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 追加情報
+      description: バグに関連するその他の情報をここに追加してください。該当する場合はスクリーンショットも含めてください。

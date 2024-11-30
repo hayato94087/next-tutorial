@@ -1,0 +1,29 @@
+name: "🧑‍💻 機能リクエスト"
+description: このプロジェクトへのアイデアを提案する
+title: "機能: "
+labels: ["✨ 機能強化"]
+body:
+  - type: textarea
+    attributes:
+      label: あなたの機能リクエストは問題に関連していますか？詳しく説明してください。
+      description:
+        問題が何であるかを明確かつ簡潔に説明してください。例：私はいつも [...]
+        のときにフラストレーションを感じます。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 希望する解決策を説明してください
+      description: 何が起こることを望むのか、明確かつ簡潔に説明してください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 代替案を説明してください
+      description: 検討した他の解決策や機能があれば、明確かつ簡潔に説明してください。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 追加情報
+      description: 機能に関連するその他の情報をここに追加してください。機能リクエストが他のIssueやディスカッションに関連している場合は、ここでリンクしてください。
