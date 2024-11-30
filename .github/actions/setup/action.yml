@@ -3,11 +3,11 @@ description: "Common setup steps for Actions"
 
 inputs:
   node-version:
-    description: 'Node.js version'
-    default: '20.x'
+    description: "Node.js version"
+    default: "20.x"
   pnpm-version:
-    description: 'PNPM version'
-    default: '9.9.0'
+    description: "PNPM version"
+    default: "9.9.0"
 
 runs:
   using: composite
@@ -21,7 +21,7 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
-        cache: 'pnpm'
+        cache: "pnpm"
 
     - name: Install dependencies
       shell: bash
