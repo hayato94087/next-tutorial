@@ -11,6 +11,7 @@ on:
 permissions:
   issues: write
 
+# TODO: ブランチ保護ルールを設定したら削除
 jobs:
   build:
     runs-on: ubuntu-latest
