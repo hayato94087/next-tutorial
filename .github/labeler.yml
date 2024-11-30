@@ -1,6 +1,6 @@
 "⚙️ CI関連":
   - changed-files:
-      - any-glob-to-all-files:
+      - any-glob-to-any-file:
           [".github/**/*", ".lintstagedrc", ".prettierrc.mjs", ".eslintrc.cjs"]
 
 "📚 ドキュメント":
