@@ -54,7 +54,7 @@ const config = {
       },
     },
   ],
-  ignorePatterns: ["src/components/ui/*"],
+  ignorePatterns: ["src/components/ui/*", "*.md"],
 };
 
 module.exports = config;
