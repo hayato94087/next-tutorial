@@ -1,6 +1,5 @@
 name: Vercel Preview Deployment
 env:
-  PNPM_VERSION: "9.9.0"
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
@@ -8,6 +7,7 @@ on:
   push:
     branches-ignore:
       - main
+
 jobs:
   Deploy-Preview:
     runs-on: ubuntu-latest
@@ -16,10 +16,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
+      - name: Setup and install
+        uses: ./.github/actions/setup
 
       - name: Install Vercel CLI
         run: pnpm install --global vercel@latest
