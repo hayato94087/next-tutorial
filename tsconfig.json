@@ -23,6 +23,16 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js", ".next/types/**/*.ts", ".eslintrc.cjs", "next.config.ts", "postcss.config.mjs"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.js",
+    ".next/types/**/*.ts",
+    ".eslintrc.cjs",
+    "next.config.ts",
+    "postcss.config.mjs"
+  ],
   "exclude": ["node_modules", "dist"]
 }
