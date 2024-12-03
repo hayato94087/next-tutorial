@@ -19,12 +19,12 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: ${{ env.pnpm-version }}
+          version: ${{ env.NODE_VERSION }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.node-version }}
+          node-version: ${{ env.PNPM_VERSION }}
           cache: "pnpm"
 
       - name: Install dependencies
