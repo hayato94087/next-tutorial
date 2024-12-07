@@ -26,10 +26,3 @@ runs:
     - name: Install dependencies
       shell: bash
       run: pnpm install --frozen-lockfile
-
-    - name: Setup project
-      shell: bash
-      run: |
-        if [ -f ".env.example" ]; then
-          cp .env.example .env
-        fi
