@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   eslint: {
-    dirs: ['.']
-  }
+    dirs: ["."],
+  },
 };
 
 export default nextConfig;

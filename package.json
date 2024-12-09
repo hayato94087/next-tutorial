@@ -9,6 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
+    "format": "prettier --check \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc,yml,yaml}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc,yml,yaml}\"",
     "typecheck": "tsc --noEmit",
     "clean": "git clean -xdf node_modules dist"
   },
@@ -18,6 +20,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "@types/eslint": "^8.56.10",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -29,6 +32,8 @@
     "eslint-plugin-unicorn": "^56.0.1",
     "postcss": "^8",
     "postcss-load-config": "^6.0.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.6.2"
   }
